@@ -6,7 +6,6 @@ import iconReviews from "../assets/icon-review.png";
 import AppNotFound from "./AppNotFound";
 import toast, { Toaster } from "react-hot-toast";
 
-// 🧠 Recharts imports
 import {
   BarChart,
   Bar,
@@ -108,7 +107,6 @@ const ProductDetails = () => {
 
       <hr className="text-gray-300 mt-8" />
 
-      {/* 📊 Chart Section */}
       {chartData.length > 0 && (
         <div className="mt-8">
           <h3 className="text-xl font-semibold mb-4 text-gray-800">
@@ -128,7 +126,6 @@ const ProductDetails = () => {
         </div>
       )}
 
-      {/* 📝 Description */}
       <div className="mt-8">
         <h3 className="text-lg sm:text-xl font-semibold mb-2 text-gray-800">
           Description
