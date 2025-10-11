@@ -12,7 +12,6 @@ const Navbar = () => {
   return (
     <nav className="bg-base-100 shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
-        {/* ===== Left side (Logo) ===== */}
         <Link
           to="/"
           className="flex items-center text-2xl font-bold text-[#9156ef]"
@@ -21,7 +20,6 @@ const Navbar = () => {
           HERO.IO
         </Link>
 
-        {/* ===== Desktop Menu ===== */}
         <ul className="hidden md:flex gap-8 font-medium text-gray-700">
           <li>
             <NavLink to="/" className={activeLink}>
@@ -84,7 +82,6 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* ===== Mobile Dropdown ===== */}
       {isOpen && (
         <div className="md:hidden bg-base-100 border-t border-gray-200">
           <ul className="flex flex-col py-3 space-y-2 text-center font-medium">

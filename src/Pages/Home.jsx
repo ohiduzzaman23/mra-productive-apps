@@ -31,9 +31,7 @@ const Home = () => {
 
   return (
     <div>
-      {/* 🔹 Container Section */}
       <div className="max-w-screen-xl mx-auto px-4 md:px-8">
-        {/* Hero Text */}
         <div className="flex justify-center text-center mt-10">
           <div className="w-full lg:w-4/5">
             <h1 className="text-[42px] md:text-[65px] font-bold leading-tight">
@@ -96,7 +94,6 @@ const Home = () => {
         </div>
       </div>
 
-      {/* 🔹 Featured Apps */}
       <div className="max-w-screen-xl mx-auto px-4 md:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-10">
           {featuredProducts.map((product) => (
@@ -104,7 +101,6 @@ const Home = () => {
           ))}
         </div>
 
-        {/* Show All Button */}
         <div className="flex justify-center my-10">
           <Link to="/products">
             <button className="btn bg-[#6D36E5] text-white">Show All</button>
