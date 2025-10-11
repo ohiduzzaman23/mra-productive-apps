@@ -6,6 +6,17 @@ import iconReviews from "../assets/icon-review.png";
 import AppNotFound from "./AppNotFound";
 import toast, { Toaster } from "react-hot-toast";
 
+// 🧠 Recharts imports
+import {
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  Tooltip,
+  CartesianGrid,
+  ResponsiveContainer,
+} from "recharts";
+
 const ProductDetails = () => {
   const product = useLoaderData();
   const [selectedProducts, setSelectedProducts] = useState([]);
@@ -35,6 +46,8 @@ const ProductDetails = () => {
   };
 
   if (!product) return <AppNotFound />;
+
+  const chartData = product.ratings || [];
 
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 py-10">
@@ -95,7 +108,28 @@ const ProductDetails = () => {
 
       <hr className="text-gray-300 mt-8" />
 
-      <div className="mt-6">
+      {/* 📊 Chart Section */}
+      {chartData.length > 0 && (
+        <div className="mt-8">
+          <h3 className="text-xl font-semibold mb-4 text-gray-800">
+            Ratings Breakdown
+          </h3>
+          <div className="w-full h-72">
+            <ResponsiveContainer width="100%" height="100%">
+              <BarChart data={chartData}>
+                <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
+                <XAxis dataKey="name" stroke="#6b7280" />
+                <YAxis />
+                <Tooltip />
+                <Bar dataKey="count" fill="#8884d8" barSize={40} radius={8} />
+              </BarChart>
+            </ResponsiveContainer>
+          </div>
+        </div>
+      )}
+
+      {/* 📝 Description */}
+      <div className="mt-8">
         <h3 className="text-lg sm:text-xl font-semibold mb-2 text-gray-800">
           Description
         </h3>
