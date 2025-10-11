@@ -1,6 +1,6 @@
 [
   {
-    "image": "../src/assets/demo-app (1).webp",
+    "image": "/demo-app1.webp",
     "title": "PhotoMaster Pro",
     "companyName": "PixelSoft Ltd.",
     "id": 1,
@@ -18,7 +18,7 @@
     ]
   },
   {
-    "image": "../src/assets/demo-app (2).webp",
+    "image": "/demo-app2.webp",
     "title": "TaskFlow",
     "companyName": "NextGen Apps",
     "id": 2,
@@ -36,7 +36,7 @@
     ]
   },
   {
-    "image": "../src/assets/demo-app (3).webp",
+    "image": "/demo-app3.webp",
     "title": "FitTrack",
     "companyName": "HealthMate Co.",
     "id": 3,
@@ -54,7 +54,7 @@
     ]
   },
   {
-    "image": "../src/assets/demo-app (4).webp",
+    "image": "/demo-app4.webp",
     "title": "NoteWave",
     "companyName": "CloudSync Inc.",
     "id": 4,
@@ -72,7 +72,7 @@
     ]
   },
   {
-    "image": "../src/assets/demo-app (5).webp",
+    "image": "/demo-app5.webp",
     "title": "LangLearn",
     "companyName": "EduTech Global",
     "id": 5,
@@ -90,7 +90,7 @@
     ]
   },
   {
-    "image": "../src/assets/demo-app (6).webp",
+    "image": "/demo-app6.webp",
     "title": "SoundBeat",
     "companyName": "Vibe Studio",
     "id": 6,
@@ -108,7 +108,7 @@
     ]
   },
   {
-    "image": "../src/assets/demo-app (20).jpeg",
+    "image": "/demo-app7.png",
     "title": "ShopEase",
     "companyName": "EcomWorld",
     "id": 7,
@@ -126,7 +126,7 @@
     ]
   },
   {
-    "image": "../src/assets/demo-app (7).png",
+    "image": "/demo-app8.png",
     "title": "MindEase",
     "companyName": "CalmTech Labs",
     "id": 8,
@@ -144,7 +144,7 @@
     ]
   },
   {
-    "image": "../src/assets/demo-app (8).png",
+    "image": "/demo-app9.jpeg",
     "title": "BudgetBuddy",
     "companyName": "FinEdge Solutions",
     "id": 9,
@@ -162,7 +162,7 @@
     ]
   },
   {
-    "image": "../src/assets/demo-app (9).jpeg",
+    "image": "/demo-app10.png",
     "title": "WeatherX",
     "companyName": "SkyView Technologies",
     "id": 10,
@@ -180,7 +180,7 @@
     ]
   },
   {
-    "image": "../src/assets/demo-app (10).png",
+    "image": "/demo-app11.jpeg",
     "title": "CodeCraft",
     "companyName": "DevLab Studio",
     "id": 11,
@@ -198,7 +198,7 @@
     ]
   },
   {
-    "image": "../src/assets/demo-app (11).jpeg",
+    "image": "/demo-app12.jpeg",
     "title": "TravelMate",
     "companyName": "GoWorld Apps",
     "id": 12,
@@ -216,7 +216,7 @@
     ]
   },
   {
-    "image": "../src/assets/demo-app (12).jpeg",
+    "image": "/demo-app13.jpeg",
     "title": "DocuScan",
     "companyName": "SmartVision Tech",
     "id": 13,
@@ -234,7 +234,7 @@
     ]
   },
   {
-    "image": "../src/assets/demo-app (13).jpeg",
+    "image": "/demo-app14.jpeg",
     "title": "CryptoWise",
     "companyName": "FinChain Labs",
     "id": 14,
@@ -252,7 +252,7 @@
     ]
   },
   {
-    "image": "../src/assets/demo-app (14).jpeg",
+    "image": "/demo-app15.jpeg",
     "title": "StreamBox",
     "companyName": "MediaNow",
     "id": 15,
@@ -270,7 +270,7 @@
     ]
   },
   {
-    "image": "../src/assets/demo-app (15).jpeg",
+    "image": "/demo-app16.jpeg",
     "title": "DailyReads",
     "companyName": "Insight Media",
     "id": 16,
@@ -288,7 +288,7 @@
     ]
   },
   {
-    "image": "../src/assets/demo-app (16).jpeg",
+    "image": "/demo-app17.jpeg",
     "title": "PlantPal",
     "companyName": "GreenGrow Apps",
     "id": 17,
@@ -306,7 +306,7 @@
     ]
   },
   {
-    "image": "../src/assets/demo-app (17).jpeg",
+    "image": "/demo-app18.jpeg",
     "title": "DriveSafe",
     "companyName": "AutoGuard Systems",
     "id": 18,
@@ -324,7 +324,7 @@
     ]
   },
   {
-    "image": "../src/assets/demo-app (18).jpeg",
+    "image": "/demo-app19.jpeg",
     "title": "CookMate",
     "companyName": "TasteLab Studio",
     "id": 19,
@@ -342,7 +342,7 @@
     ]
   },
   {
-    "image": "../src/assets/demo-app (19).jpeg",
+    "image": "/demo-app20.jpeg",
     "title": "QuizZone",
     "companyName": "PlayMind Inc.",
     "id": 20,

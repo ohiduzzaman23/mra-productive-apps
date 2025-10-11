@@ -16,7 +16,7 @@ const Navbar = () => {
           to="/"
           className="flex items-center text-2xl font-bold text-[#9156ef]"
         >
-          <img className="w-7 mr-2" src="/src/assets/logo.png" alt="Logo" />
+          <img className="w-7 mr-2" src="/logo.png" alt="Logo" />
           HERO.IO
         </Link>
 
