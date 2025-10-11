@@ -31,74 +31,85 @@ const Home = () => {
 
   return (
     <div>
-      <div className="flex justify-center">
-        <div className="mt-10 text-center w-180">
-          <h1 className="text-[65px] font-bold">
-            We Build <br />
-            <span className="bg-gradient-to-tr from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent ">
-              Productive
-            </span>{" "}
-            Apps
+      {/* 🔹 Container Section */}
+      <div className="max-w-screen-xl mx-auto px-4 md:px-8">
+        {/* Hero Text */}
+        <div className="flex justify-center text-center mt-10">
+          <div className="w-full lg:w-4/5">
+            <h1 className="text-[42px] md:text-[65px] font-bold leading-tight">
+              We Build <br />
+              <span className="bg-gradient-to-tr from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent">
+                Productive
+              </span>{" "}
+              Apps
+            </h1>
+            <p className="py-5 text-gray-500 max-w-2xl mx-auto">
+              At HERO.IO, we craft innovative apps designed to make everyday
+              life simpler, smarter, and more exciting. Our goal is to turn your
+              ideas into digital experiences that truly make an impact.
+            </p>
+            <div>
+              <Link to="https://play.google.com/store/games?hl=en">
+                <button className="btn mr-4">
+                  <img src={googlePlay} alt="" className="w-[20px]" />
+                  Google Play
+                </button>
+              </Link>
+              <Link to="https://www.apple.com/app-store/">
+                <button className="btn">
+                  <img src={appPlay} alt="" className="w-[20px]" />
+                  App Store
+                </button>
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        {/* Hero Image */}
+        <div className="flex justify-center">
+          <img src={heroImage} alt="" className="w-[600px] mt-10" />
+        </div>
+      </div>
+
+      <div className="w-full bg-gradient-to-tr from-[#6B35E5] to-[#9C5FF1] text-white py-12 text-center">
+        <div className="max-w-screen-xl mx-auto px-4 md:px-8">
+          <h1 className="text-4xl font-bold mb-8">
+            Trusted by Millions, Built for You
           </h1>
-          <p className="py-5 text-gray-500">
-            At HERO.IO, we craft innovative apps designed to make everyday life
-            simpler, smarter, and more exciting. Our goal is to turn your ideas
-            into digital experiences that truly make an impact.
-          </p>
-          <div>
-            <Link to="https://play.google.com/store/games?hl=en">
-              <button className="btn mr-4">
-                <img src={googlePlay} alt="" className="w-[20px]" />
-                Google Play
-              </button>
-            </Link>
-            <Link to="https://www.apple.com/app-store/">
-              <button className="btn">
-                <img src={appPlay} alt="" className="w-[20px]" />
-                App Store
-              </button>
-            </Link>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div>
+              <p className="text-gray-300">Total Downloads</p>
+              <h1 className="text-6xl font-bold my-4">29.6M</h1>
+              <p>21% more than last month</p>
+            </div>
+            <div>
+              <p className="text-gray-300">Total Reviews</p>
+              <h1 className="text-6xl font-bold my-4">906K</h1>
+              <p>46% more than last month</p>
+            </div>
+            <div>
+              <p className="text-gray-300">Active Apps</p>
+              <h1 className="text-6xl font-bold my-4">132+</h1>
+              <p>31 more will Launch</p>
+            </div>
           </div>
         </div>
       </div>
 
-      <div className="flex justify-center">
-        <img src={heroImage} alt="" className="w-180 mt-10" />
-      </div>
-
-      <div className="relative left-1/2 right-1/2 -mx-[50vw] w-screen bg-gradient-to-tr from-[#6B35E5] to-[#9C5FF1] text-white p-10 text-center">
-        <h1 className="text-4xl font-bold mb-5">
-          Trusted by Millions, Built for You
-        </h1>
-        <div className="flex lg:justify-center lg:gap-20">
-          <div>
-            <p className="text-gray-300">Total Downloads</p>
-            <h1 className="text-6xl font-bold my-4">29.6M</h1>
-            <p>21% more than last month</p>
-          </div>
-          <div>
-            <p className="text-gray-300">Total Reviews</p>
-            <h1 className="text-6xl font-bold my-4">906K</h1>
-            <p className="text-gray-300">46% more than last month</p>
-          </div>
-          <div>
-            <p className="text-gray-300">Active Apps</p>
-            <h1 className="text-6xl font-bold my-4">132+</h1>
-            <p className="text-gray-300">31 more will Launch</p>
-          </div>
+      {/* 🔹 Featured Apps */}
+      <div className="max-w-screen-xl mx-auto px-4 md:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-10">
+          {featuredProducts.map((product) => (
+            <AppCard key={product.id} product={product} />
+          ))}
         </div>
-      </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-10">
-        {featuredProducts.map((product) => (
-          <AppCard key={product.id} product={product} />
-        ))}
-      </div>
-
-      <div className="flex justify-center my-5">
-        <Link to="/products">
-          <button className="btn bg-[#6D36E5] text-white">Show All</button>
-        </Link>
+        {/* Show All Button */}
+        <div className="flex justify-center my-10">
+          <Link to="/products">
+            <button className="btn bg-[#6D36E5] text-white">Show All</button>
+          </Link>
+        </div>
       </div>
     </div>
   );

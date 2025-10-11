@@ -8,13 +8,20 @@ const MainLayout = () => {
   const isLoading = navigation.state === "loading";
 
   return (
-    <div className="flex flex-col min-h-screen">
-      <Navbar></Navbar>
+    <div className="flex flex-col min-h-screen bg-base-100">
+      {/* Navbar */}
+      <Navbar />
+
+      {/* Loading Spinner */}
       {isLoading && <LoadingSpinner />}
-      <div className="max-w-screen-xl mx-auto w-full px-4 md:mx-8 lg:px-12 flex-1">
-        <Outlet></Outlet>
-      </div>
-      <Footer></Footer>
+
+      {/* Main Content — পেজ নিজে তার কন্টেইনার সেট করবে */}
+      <main className="flex-1">
+        <Outlet />
+      </main>
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 };

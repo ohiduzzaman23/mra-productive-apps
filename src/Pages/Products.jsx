@@ -96,7 +96,7 @@ const Products = () => {
               onClick={() => navigate(`/product/${product.id}`)}
               className="bg-white rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-all duration-200 cursor-pointer"
             >
-              <div className="bg-gray-100 h-36 flex items-center justify-center rounded-t-xl overflow-hidden">
+              <div className="bg-gray-100 h-48 flex items-center justify-center rounded-t-xl overflow-hidden">
                 <img
                   src={product.image}
                   alt={product.title}

@@ -31,7 +31,7 @@ const AppCard = ({ product }) => {
         </figure>
         <div className="card-body items-center text-center">
           <h2 className="card-title">{title}</h2>
-          <div className="flex justify-between gap-20">
+          <div className="flex justify-between gap-30">
             <button className="btn btn-sm bg-blue-100 text-blue-600 border-none hover:bg-blue-200">
               {formatDownloads(downloads)}
             </button>
