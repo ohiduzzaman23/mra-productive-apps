@@ -41,7 +41,7 @@ const Navbar = () => {
         {/* ===== Right side button ===== */}
         <div className="hidden md:flex">
           <a
-            href="https://github.com/ohiduzzaman23/Hero-Apps"
+            href="https://github.com/ohiduzzaman23/mra-productive-apps"
             target="_blank"
             rel="noopener noreferrer"
             className="btn bg-gradient-to-tr from-[#632EE3] to-[#9F62F2] text-white border-none hover:opacity-90 flex items-center gap-2"
