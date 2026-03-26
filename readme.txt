@@ -29,3 +29,13 @@ This app showcases a list of apps with detailed information, ratings, downloads,
 Browse apps on the home page
 Click an app to see detailed info and ratings chart
 Install apps and see them persist in your browser
+
+---
+
+## Assignment Purpose
+
+Demonstrates handling JSON data in React
+Implements charts with Recharts
+Uses localStorage for user state persistence
+Shows responsive UI with Tailwind CSS
+Implements navigation using React Router
