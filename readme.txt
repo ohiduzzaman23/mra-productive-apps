@@ -21,3 +21,11 @@ This app showcases a list of apps with detailed information, ratings, downloads,
 - React Router  
 - Recharts  
 - react-hot-toast  
+
+---
+
+## Usage
+
+Browse apps on the home page
+Click an app to see detailed info and ratings chart
+Install apps and see them persist in your browser
