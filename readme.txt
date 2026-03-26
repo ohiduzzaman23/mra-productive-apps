@@ -1,3 +1,7 @@
+Live link: https://mra-productive-app.netlify.app/
+
+Github Link: https://github.com/ohiduzzaman23/mra-productive-apps
+
 ## Details App
 
 A **React-based web application** built as an assignment project.  
